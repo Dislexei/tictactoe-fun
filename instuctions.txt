@@ -1,0 +1,30 @@
+Author: Alexei Strapchev
+
+This file lists the instructions for installing the application to your local Apache web server. 
+
+System requirements:
+1. OS Ubuntu (recommended)
+2. PHP 7
+3. Apache server
+4. Local DynamoDB 
+5. PHP SDK for DynamoDB
+
+
+1. Setting placeholder Credentials for AWS as the Local variables in Ubuntu
+Create a file called '.pam-evnironment' in your home directory and place the following text in there:
+AWS_ACCESS_KEY_ID=qazwsx
+AWS_SECRET_ACCESS_KEY=qweasd
+
+2. Place the contents of the TicTacToe archive into your webserver's default folder.
+
+3. On top of .php files (DynamoHelper.php, gameManager.php, index.php,   install.php, populateDummy.php) replace the line:
+
+"require '/home/alexei/vendor/autoload.php';"
+
+With "require '<path_to_the_DynamoDB_php_SDK>'"
+
+4. Open two CLI windows, navigate to the TicTacToe folder on your local webserver.
+
+5. Run the install.php file in one of the CLI windows.
+
+6. Run the index.php file in both CLI windows.

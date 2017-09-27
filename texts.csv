@@ -1,0 +1,29 @@
+welcome_nouser,"Welcome to TicTacToe. Please login or register a new user. Select and option and press return.
+1.Register new user.
+2.Log in as existing user.
+3.Exit
+"
+welcome_loggedin,"Welcome back, "
+welcome_loggedin2,"Select and option and press return.
+1. Play TicTacToe
+2. Log out
+3. Exit
+"
+registration,"User registration. Please specify the name of the user.
+"
+registration_err1,"User already exists. Please specify another name.
+"
+registration_pass," is a valid name. Please specify password for the user.
+"
+registration_success,User created successfully.
+login,"Login page. 
+Please enter user name.
+"
+login_prompt_name,"Please enter user name.
+"
+login_prompt_pass,"Please enter user password.
+"
+login_err1,"User not found.
+"
+login_err2,Incorrect password. Please try again.
+login_success,Passwords match.
